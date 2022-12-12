@@ -21,12 +21,12 @@ app.get('/', (req, res) => {
       </head>
       <body>
         <section>
-          <h2>My Course Goal</h2>
+          <h2>My Course Goal!</h2>
           <h3>${userGoal}</h3>
         </section>
         <form action="/store-goal" method="POST">
           <div class="form-control">
-            <label>Course Goal</label>
+            <label>Course Goal:</label>
             <input type="text" name="goal">
           </div>
           <button>Set Course Goal</button>
@@ -43,4 +43,4 @@ app.post('/store-goal', (req, res) => {
   res.redirect('/');
 });
 
-app.listen(8180);
+app.listen(80);
